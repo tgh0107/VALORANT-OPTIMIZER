@@ -15,7 +15,7 @@ if (-not $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administra
         if ($PSCommandPath) {
             Start-Process powershell.exe -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
         } else {
-            $onlineUrl = "https://raw.https://github.com/tgh0107/VALORANT-OPTIMIZER/edit/main/install.ps1"
+            $onlineUrl = "https://raw.githubusercontent.com/tgh0107/VALORANT-OPTIMIZER/refs/heads/main/install.ps1"
             Start-Process powershell.exe -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"irm $onlineUrl | iex`"" -Verb RunAs
         }
         Exit
